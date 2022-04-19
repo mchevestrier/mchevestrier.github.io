@@ -6,10 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "next lint --ext js,jsx",
+    "lint:fix": "next lint --fix --ext js,jsx",
     "export": "next export",
     "deploy": "npm run build && npm run export",
-    "test": "echo \"No tests defined\""
+    "test": "echo \"No tests defined\"",
+    "prepare": "husky install"
   },
   "browserslist": [
     "last 2 versions",
@@ -36,7 +38,9 @@
     "cssnano": "^5.1.7",
     "cssnano-preset-advanced": "^5.3.3",
     "eslint": "^8.13.0",
+    "eslint-config-airbnb": "^19.0.4",
     "eslint-config-next": "^12.1.5",
+    "husky": "^7.0.4",
     "imagemin-svgo": "^9.0.0",
     "jimp": "^0.16.1",
     "postcss": "^8.4.12",
