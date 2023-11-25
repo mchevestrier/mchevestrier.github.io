@@ -1,4 +1,4 @@
-name: Deploy Next.js to Github Pages
+name: Deploy website to Github Pages
 
 on:
   push:
@@ -10,6 +10,9 @@ on:
       - main
       - master
 
+defaults:
+  run:
+    working-directory: packages/web
 jobs:
   ci:
     runs-on: ${{ matrix.os }}
@@ -17,7 +20,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [18]
+        node: [20]
 
     steps:
       - name: Checkout 🛎
@@ -39,6 +42,7 @@ jobs:
 
       - name: Install dependencies 👨🏻‍💻
         run: npm ci --prefer-offline --no-audit
+        working-directory: .
 
       - name: Run linter 👀
         run: npm run lint
@@ -53,4 +57,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./out
+          publish_dir: ./packages/web/out
