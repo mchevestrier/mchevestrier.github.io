@@ -1,43 +1,16 @@
 {
   "name": "mchevestrier.github.io",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint --ext js,jsx,ts,tsx",
-    "lint:fix": "next lint --fix --ext js,jsx,ts,tsx",
-    "deploy": "npm run build",
-    "test": "echo \"No tests defined\"",
-    "prepare": "husky install"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:fix": "npm run -ws --if-present lint:fix"
   },
-  "browserslist": [
-    "last 2 versions",
-    ">0.3%",
-    "not dead",
-    "not ie 11"
-  ],
-  "dependencies": {
-    "classnames": "^2.3.1",
-    "next": "^13.3.4",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-gtm-module": "^2.0.11",
-    "tailwindcss": "^3.0.24"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mchevestrier/mchevestrier.github.io.git"
   },
-  "devDependencies": {
-    "@types/lodash": "^4.14.194",
-    "@types/node": "18.14.6",
-    "@types/react": "18.0.28",
-    "@types/react-gtm-module": "^2.0.1",
-    "autoprefixer": "^10.4.4",
-    "cssnano": "^5.1.7",
-    "cssnano-preset-advanced": "^5.3.3",
-    "eslint": "^8.13.0",
-    "eslint-config-next": "^13.2.3",
-    "husky": "^7.0.4",
-    "postcss": "^8.4.12",
-    "typescript": "^4.9.5"
-  }
+  "homepage": "https://github.com/mchevestrier/mchevestrier.github.io#readme",
+  "workspaces": [
+    "./packages/*"
+  ]
 }
