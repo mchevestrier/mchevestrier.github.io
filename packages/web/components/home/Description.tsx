@@ -9,21 +9,27 @@ export default function Description() {
       <h1 className="text-6xl font-bold py-4 text-white">
         <div className="flex flex-wrap items-center">
           <NextImage src={logo} alt="" className="inline pr-4 w-20 h-auto" width="100" height="100" />
-          <span className="text-[#fffaf1] [text-shadow:1px_1px_16px_#f85f7362]">Martin Chevestrier</span>
+          <span className="text-[#fffaf1]">Martin Chevestrier</span>
         </div>
       </h1>
       <div className="p-2 max-w-max"><Socials /></div>
       <div className="text-2xl text-[#fff6e5] text-justify max-w-[40rem] space-y-3 py-4">
         <p>
-          Graduated from a French business school and currently employed in the marketing team
-          of an e-learning scale-up, I am looking for some professional challenge in a company
-          that can make use of both my business background and technical skills.
+          I&apos;m a software engineer with a background in marketing.
         </p>
-        <p>
-          I specialize in web development and digital marketing,
-          as well as data analysis and automation.
-        </p>
-        <p>On a personal level, I&apos;m also interested in cybersecurity and linguistics. </p>
+        {/* <p>
+          I specialize in full stack web development and data analysis.
+          I&apos;m also casually into mobile app development, DevOps and systems programming.
+        </p> */}
+        <p>Here are some personal interests of mine at the moment:</p>
+        <ul className="list-disc list-inside">
+          <li>Computational linguistics, lexical analyzers and parser generators </li>
+          <li>Theorem provers, logic, and formal verification </li>
+          <li>Mathematical optimization, symbolic computation, and applied linear algebra </li>
+          <li>Asynchronous runtimes and concurrency (i.e. fibers, continuations, work stealing, distributed systems...) </li>
+          <li>Finance, econometrics, operations research and monetary policies </li>
+          {/* <li>Cybersecurity </li> */}
+        </ul>
       </div>
     </div>
   )

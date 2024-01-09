@@ -21,11 +21,18 @@ export default function Page() {
     <>
       <H1>Experience</H1>
       <Main>
+          {/* <Section>
+              <Card company="Some company" logo={ img.company } place="France">
+                <Item title="Software Engineer" span="August 2023 - Today">
+                  <p> :) </p>
+                </Item>
+              </Card>
+          </Section> */}
           <Section>
               <Card company="Projet Voltaire" logo={ img.projetvoltaire } place="Lyon, France">
-                <Item title="Junior Digital Project Manager" span="September 2021 - Today">
-                  <p>As a Junior Digital Project Manager at Woonoz/Projet Voltaire, I’m responsible for the performance of 10 different websites, and the tracking and analysis of user behavior. </p>
-                  <p>I’m also in charge of marketing automation with Salesforce Marketing Cloud, as well as a variety of other projects, mostly linked with web marketing or automation. </p>
+                <Item title="Digital Project Manager" span="September 2021 - August 2023">
+                  <p>As a Digital Project Manager at Woonoz/Projet Voltaire, I was responsible for the performance of 10 different websites, and the tracking and analysis of user behavior. </p>
+                  <p>I was also in charge of marketing automation with Salesforce Marketing Cloud, as well as a variety of other projects, mostly linked with web marketing or automation. </p>
                 </Item>
                 <Item title="Content & Digital Marketing Assistant" span="September 2019 - August 2021">
                   <p>During this 2-years work-study contract, I acquired various skills such as web analytics, automation, or project management.
