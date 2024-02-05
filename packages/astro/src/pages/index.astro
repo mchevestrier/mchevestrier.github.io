@@ -1,0 +1,33 @@
+---
+import { getCollection } from 'astro:content';
+
+import LayeredWavesDivider from '../components/home/LayeredWavesDivider';
+import ArrowDivider from '../components/home/ArrowDivider';
+import Hero from '../components/home/Hero';
+import SectionButton from '../components/home/SectionButton';
+import Layout from '../layouts/Layout.astro';
+
+const pages = (await getCollection('page'))
+	.sort(({ data: {order: a }}, { data: {order: b }}) => Math.sign(a - b));
+
+---
+<Layout>
+	<div>
+		<Hero />
+
+		<LayeredWavesDivider />
+		<div class="bg-[#272427]">
+			<div class:list={[
+				'w-full mx-auto pt-16 pb-40 px-6',
+				'flex flex-wrap items-center justify-center',
+				'gap-4 sm:gap-8 md:gap-12 place-content-center place-items-center']}
+			>
+				{ pages.map((page) => (
+					<SectionButton page={page} />
+				)) }
+			</div>
+		</div>
+
+		<ArrowDivider />
+	</div>
+</Layout>

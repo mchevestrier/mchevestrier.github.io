@@ -1,0 +1,27 @@
+---
+import Header from '../components/header/Header';
+import Footer from '../components/footer/Footer';
+import { getCollection } from 'astro:content';
+import BaseLayout from './BaseLayout.astro';
+
+const pages = (await getCollection('page'))
+	.sort(({ data: {order: a }}, { data: {order: b }}) => Math.sign(a - b));
+
+---
+<BaseLayout>
+  <div id="page"
+    class="bg-[#161819] min-h-screen text-gray-50"
+    style={{
+      backgroundImage: `radial-gradient(circle at 42vw 52vh, #d3453799 0vw, #d3453722 16vw, transparent 22vw),
+                        radial-gradient(circle at 52vw 54vh, #664a62aa 0vw, #664a6233 10vw, transparent 24vw),
+                        radial-gradient(circle at 68vw 58vh, #6a3b8fcc 0vw, #6a3b8f55 12vw, transparent 26vw)`,
+      backgroundAttachment: 'fixed',
+    }}
+  >
+    <Header client:load pages={pages} />
+    <main class="min-h-[calc(100vh-220px)]">
+      <slot />
+    </main>
+    <Footer />
+  </div>
+</BaseLayout>

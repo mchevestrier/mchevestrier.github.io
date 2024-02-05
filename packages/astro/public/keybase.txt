@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/mchevestrier
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://mchevestrier.github.io
+  * I am mchevestrier (https://keybase.io/mchevestrier) on keybase.
+  * I have a public key ASB0g52Rem5YRF9ccQcVdv9Mxk3NGG_0D4doNfJx8ZReLQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012074839d917a6e58445f5c71071576ff4cc64dcd186ff40f876835f271f1945e2d0a",
+      "host": "keybase.io",
+      "kid": "012074839d917a6e58445f5c71071576ff4cc64dcd186ff40f876835f271f1945e2d0a",
+      "uid": "f61beddd9d2fdf252f29ebea24ce0f19",
+      "username": "mchevestrier"
+    },
+    "merkle_root": {
+      "ctime": 1683434956,
+      "hash": "bb5df871ca94ff9da091b891599cc8623c6414d1d7010387e7ee10528b103eeed226fdcdd701056c16de72135a24d9e9615ec62ab759659295154492c5c974ce",
+      "hash_meta": "c48f3a1b2c74a599d07e383e01197180dca3aa86631d0637440a295f47d6b450",
+      "seqno": 24422011
+    },
+    "service": {
+      "entropy": "CgQdC0c2gN3sIzrM6sKLWZ8E",
+      "hostname": "mchevestrier.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.0.1"
+  },
+  "ctime": 1683435049,
+  "expire_in": 504576000,
+  "prev": "4ce2832ee8a93f087a120e5f64f1b3ea65eb4a461e2add6859e54fd65246facc",
+  "seqno": 7,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgdIOdkXpuWERfXHEHFXb/TMZNzRhv9A+HaDXycfGUXi0Kp3BheWxvYWTESpcCB8QgTOKDLuipPwh6Eg5fZPGz6mXrSkYeKt1oWeVP1lJG+szEIGEahdhxLEjA40tJ1rFApjPN/1dhRprsaPRnCfR7VrbPAgHCo3NpZ8RAUhgYzQa0w9GOJJcyxmyUcSWIe6mtUGlFipWYWbDUZWfHzSikoNtGLfyXzEjafGXfH7SeBc2jrHf7bGIoXgOGBKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEILSuDpxx4PF06nWmFc3Nii+f5tga3y+cezNXcSnZHhVWo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/mchevestrier
+
+==================================================================
