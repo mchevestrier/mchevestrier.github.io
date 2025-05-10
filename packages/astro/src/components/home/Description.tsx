@@ -30,7 +30,8 @@ export default function Description() {
         <p>Here are some personal interests of mine at the moment:</p>
         <ul className="list-disc list-inside">
           <li>
-            Computational linguistics, lexical analyzers and parser generators{" "}
+            Computational linguistics, lexical analyzers and parser
+            generators{" "}
           </li>
           <li>Theorem provers, logic, and formal verification </li>
           <li>
@@ -42,7 +43,8 @@ export default function Description() {
             work stealing, distributed systems...){" "}
           </li>
           <li>
-            Finance, econometrics, operations research and monetary policies{" "}
+            Finance, econometrics, operations research and monetary
+            policies{" "}
           </li>
           {/* <li>Cybersecurity </li> */}
         </ul>
