@@ -3,7 +3,7 @@
 ## Run locally
 
 ```sh
-npm ci
+pnpm install
 cd ./packages/astro/
-npm run dev
+pnpm run dev
 ```

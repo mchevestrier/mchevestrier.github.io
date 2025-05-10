@@ -1,10 +1,11 @@
 {
   "name": "mchevestrier.github.io",
   "version": "1.0.0",
+  "packageManager": "pnpm@10.10.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
-    "lint:fix": "npm run -ws --if-present lint:fix"
+    "lint:fix": "pnpm run -r --if-present lint:fix"
   },
   "repository": {
     "type": "git",
