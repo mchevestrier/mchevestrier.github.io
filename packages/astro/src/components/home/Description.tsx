@@ -21,7 +21,7 @@ export default function Description() {
       <div className="p-2 max-w-max">
         <Socials />
       </div>
-      <div className="text-2xl text-[#fff6e5] text-justify max-w-[40rem] space-y-3 py-4">
+      <div className="text-2xl text-[#fff6e5] text-justify max-w-160 space-y-3 py-4">
         <p>I&apos;m a software engineer with a background in marketing.</p>
         {/* <p>
           I specialize in full stack web development and data analysis.

@@ -19,7 +19,7 @@ export default function MenuItem({
   return (
     <li>
       {active ? (
-        <div className="block font-semibold pr-3 md:px-6 py-3 md:py-2 rounded md:rounded-full cursor-default">
+        <div className="block font-semibold pr-3 md:px-6 py-3 md:py-2 rounded-sm md:rounded-full cursor-default">
           {children}
           <div
             className={cn(
@@ -32,7 +32,7 @@ export default function MenuItem({
         <a
           href={href}
           onClick={onClick}
-          className="block font-semibold pr-3 md:px-6 py-3 md:py-2 rounded md:rounded-full hover:bg-[#1d2021cc] focus:bg-[#1d2021cc]"
+          className="block font-semibold pr-3 md:px-6 py-3 md:py-2 rounded-sm md:rounded-full hover:bg-[#1d2021cc] focus:bg-[#1d2021cc]"
         >
           {children}
         </a>
