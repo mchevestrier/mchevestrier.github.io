@@ -20,6 +20,7 @@
     "@astrojs/rss": "^4.0.4",
     "@astrojs/sitemap": "^3.0.5",
     "@astrojs/tailwind": "^5.1.0",
+    "@mchevestrier.github.io/automata": "workspace:*",
     "@types/react": "^18.2.54",
     "@types/react-dom": "^18.2.18",
     "astro": "^4.3.2",
